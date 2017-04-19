@@ -66,7 +66,7 @@ namespace speech_recognition_1._5
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            if (File.Exists("data.xml"))
+            if (File.Exists("data.xml"))                         //When the application starts
             {
                 XmlSerializer xs = new XmlSerializer(typeof(Information));
                 FileStream read = new FileStream("data.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
@@ -189,15 +189,15 @@ namespace speech_recognition_1._5
 
         }
 
-        private async void recEngine_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        private async void recEngine_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)             // Speech recognigation Engine
         {
-            switch (e.Result.Text.ToString())
+            switch (e.Result.Text.ToString())                                
             {
                 case "learn mears":
                     System.Diagnostics.Process.Start("chrome", "http://mearssoft.wix.com/site");
                     break;
 
-                case "close Blind Eye App":
+                case "close virtual assistant":                      //// The procedure for each command
 
 
                     reader.SpeakAsync("Bye sir,take care");
@@ -800,7 +800,7 @@ namespace speech_recognition_1._5
 
                     reader = new SpeechSynthesizer();
                     reader.SelectVoiceByHints(VoiceGender.Female);
-                    reader.SpeakAsync("Of course. I am a fully voice operated multi tasking software made especially for blind people . Tonoy Ahmed, 16 years old programmer is my creator. Tonoy used C-charp programming for building me. Through me a blind can do everything he want. ");
+                    reader.SpeakAsync("Of course. I am a fully voice operated multi tasking virtual assistant. Tonoy Ahmed, 16 years old programmer is my creator. Tonoy used C-charp programming for building me. Through me you can do everything you want. ");
 
 
 
@@ -2418,11 +2418,12 @@ namespace speech_recognition_1._5
             
         {
 
+            msgWeb.Navigate(msgurlTxt.Text);
 
 
 
-            Choices commands = new Choices();
-            commands.Add(new string[] { "today", "I love u mears", "pause everything", "close Blind Eye App", "play past music", "play previous music ", "fast forward music", " play ", " pause music ", " resume music ", "play music", "play next music", " how are you mears ", "Add to phone contact", "save all information", "Add to email contact", "read received message", "send sms to current number", "call me now", "undo recent command", "space", "i feel sick", "yestarday", "tomorrow", "i am in a meeting", "i am hungry", "persel some food for me", "but", "give me your phone number", "i lost your phone number", "help me", "i am in a trouble", "call me", "how to use this", "restart", "thank you mears", "wake me up in 4 hour", "wake me up in 5 hour", "news number 1", "news number 2", "news number 3", "news number 4", "news number 5", "news number 6", "news number 7", "news number 8", "news number 9", "news number 10", "news number 11", "news number 12", "news number 13", "news number 14", "news number 15", "news number 16", "news number 17", "news number 18", "news number 19", "news number 20", "undo command", "todays news update", "Percentage veriables", "undo calculator", "thank you", "Hello Mears", "Divition", "multiply", "tell something about you", "wake me up in 10 second", "call me", "send this email to the address", "send sms to current address", "come here", "What are doing now?", "What is the current date", "stop", "What is the current location", "What are you doing", "Please call me", "mail your phone number", "Hello", "Its an urgent", "Meet with you tomorrow", "add in gmail", "nine", "send sms", "send sms to 4", "send this message to 4", "Copy number to message box", "search", "Refresh all", "Open voice dictionary", "zero", "send this message to first person", "send this message to second  person", "send this message to Free online book", "How are you", "greeting for you", "I am busy now", "meet with you tomorrow", "wake me up in 9 hour", "okey", "wake me up in 5 hour", "wake me up in 4 hour", "wake me up in 3 hour", "wake me up in 2 hour", "wake me up in 30 second", "wake me up in 1 hour", "Help me", "What is the current weather", "second veriable", "pronounce text", "send this message to the address", "learn mears", "plus", "calculate", "minus", "one", "two", "three", "four", "five", "six", "seven", "eight", "Nine", "add into add", "multiply this", "open system browser", "open my shedule", "what is the current time", "open facebook ", "print my name", "open chrome", "wake me up in 6 hour", "wake me up in 8 hour", "search", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p" });
+            Choices commands = new Choices();        /// COMMAND DATABASE
+            commands.Add(new string[] { "today", "I love u mears", "pause everything", "close virtual assistant", "play past music", "play previous music ", "fast forward music", " play ", " pause music ", " resume music ", "play music", "play next music", " how are you mears ", "Add to phone contact", "save all information", "Add to email contact", "read received message", "send sms to current number", "call me now", "undo recent command", "space", "i feel sick", "yestarday", "tomorrow", "i am in a meeting", "i am hungry", "persel some food for me", "but", "give me your phone number", "i lost your phone number", "help me", "i am in a trouble", "call me", "how to use this", "restart", "thank you mears", "wake me up in 4 hour", "wake me up in 5 hour", "news number 1", "news number 2", "news number 3", "news number 4", "news number 5", "news number 6", "news number 7", "news number 8", "news number 9", "news number 10", "news number 11", "news number 12", "news number 13", "news number 14", "news number 15", "news number 16", "news number 17", "news number 18", "news number 19", "news number 20", "undo command", "todays news update", "Percentage veriables", "undo calculator", "thank you", "Hello Mears", "Divition", "multiply", "tell something about you", "wake me up in 10 second", "call me", "send this email to the address", "send sms to current address", "come here", "What are doing now?", "What is the current date", "stop", "What is the current location", "What are you doing", "Please call me", "mail your phone number", "Hello", "Its an urgent", "Meet with you tomorrow", "add in gmail", "nine", "send sms", "send sms to 4", "send this message to 4", "Copy number to message box", "search", "Refresh all", "Open voice dictionary", "zero", "send this message to first person", "send this message to second  person", "send this message to Free online book", "How are you", "greeting for you", "I am busy now", "meet with you tomorrow", "wake me up in 9 hour", "okey", "wake me up in 5 hour", "wake me up in 4 hour", "wake me up in 3 hour", "wake me up in 2 hour", "wake me up in 30 second", "wake me up in 1 hour", "Help me", "What is the current weather", "second veriable", "pronounce text", "send this message to the address", "learn mears", "plus", "calculate", "minus", "one", "two", "three", "four", "five", "six", "seven", "eight", "Nine", "add into add", "multiply this", "open system browser", "open my shedule", "what is the current time", "open facebook ", "print my name", "open chrome", "wake me up in 6 hour", "wake me up in 8 hour", "search", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p" });
             Grammar grammer = new Grammar(new GrammarBuilder(commands));
 
             recEngine.RequestRecognizerUpdate();
@@ -2506,7 +2507,7 @@ namespace speech_recognition_1._5
 
                 textBox20.Text = textBox5.Text;
 
-                textBox4.Text = "Hi Friend, I am Mears. Software for Blind .";
+                textBox4.Text = "Hi Friend, I am Mears. A Virtual Assistant .";
                 reader.Dispose();    ////listeningggg for
 
                 reader = new SpeechSynthesizer();
@@ -2822,7 +2823,7 @@ namespace speech_recognition_1._5
 
             catch
             {
-                textBox4.Text = "Hi Friend, I am Mears. Software for Blind .";
+                textBox4.Text = "Hi Friend, I am Mears. A virtual Assistant";
                 reader.Dispose();    ////listeningggg for
 
                 reader = new SpeechSynthesizer();
@@ -3569,7 +3570,15 @@ namespace speech_recognition_1._5
 
         }
 
-       
+        private void richTextBox3_TextChanged(object sender, EventArgs e)
+        {
+            richTextBox3.Text = "";
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

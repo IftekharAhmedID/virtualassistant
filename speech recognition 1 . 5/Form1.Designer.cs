@@ -38,6 +38,7 @@
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Home = new System.Windows.Forms.TabPage();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.msgurlTxt = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -92,6 +93,51 @@
             this.label14 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.NasaDataPage = new System.Windows.Forms.TabPage();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.NasaTab = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.AerospaceTab = new System.Windows.Forms.TabPage();
+            this.webBrowser3 = new System.Windows.Forms.WebBrowser();
+            this.button3 = new System.Windows.Forms.Button();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.AppliedScienceTab = new System.Windows.Forms.TabPage();
+            this.webBrowser4 = new System.Windows.Forms.WebBrowser();
+            this.button4 = new System.Windows.Forms.Button();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.AppsTab = new System.Windows.Forms.TabPage();
+            this.webBrowser5 = new System.Windows.Forms.WebBrowser();
+            this.button5 = new System.Windows.Forms.Button();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.EarthScienceTab = new System.Windows.Forms.TabPage();
+            this.webBrowser6 = new System.Windows.Forms.WebBrowser();
+            this.button6 = new System.Windows.Forms.Button();
+            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.ManagementOperationsTab = new System.Windows.Forms.TabPage();
+            this.webBrowser7 = new System.Windows.Forms.WebBrowser();
+            this.button7 = new System.Windows.Forms.Button();
+            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.RawDataTab = new System.Windows.Forms.TabPage();
+            this.webBrowser10 = new System.Windows.Forms.WebBrowser();
+            this.button10 = new System.Windows.Forms.Button();
+            this.richTextBox10 = new System.Windows.Forms.RichTextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.SoftwareTab = new System.Windows.Forms.TabPage();
+            this.webBrowser9 = new System.Windows.Forms.WebBrowser();
+            this.button9 = new System.Windows.Forms.Button();
+            this.richTextBox9 = new System.Windows.Forms.RichTextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.SpaceScienceTab = new System.Windows.Forms.TabPage();
+            this.webBrowser8 = new System.Windows.Forms.WebBrowser();
+            this.button8 = new System.Windows.Forms.Button();
+            this.richTextBox8 = new System.Windows.Forms.RichTextBox();
+            this.label54 = new System.Windows.Forms.Label();
             this.Dictionary = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.label47 = new System.Windows.Forms.Label();
@@ -264,6 +310,7 @@
             this.EngineEnable = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Home.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Clock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -273,6 +320,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Calculator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.NasaDataPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.tabControl2.SuspendLayout();
+            this.NasaTab.SuspendLayout();
+            this.AerospaceTab.SuspendLayout();
+            this.AppliedScienceTab.SuspendLayout();
+            this.AppsTab.SuspendLayout();
+            this.EarthScienceTab.SuspendLayout();
+            this.ManagementOperationsTab.SuspendLayout();
+            this.RawDataTab.SuspendLayout();
+            this.SoftwareTab.SuspendLayout();
+            this.SpaceScienceTab.SuspendLayout();
             this.Dictionary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -352,6 +411,7 @@
             this.tabControl1.Controls.Add(this.Weather);
             this.tabControl1.Controls.Add(this.Location);
             this.tabControl1.Controls.Add(this.Calculator);
+            this.tabControl1.Controls.Add(this.NasaDataPage);
             this.tabControl1.Controls.Add(this.Dictionary);
             this.tabControl1.Controls.Add(this.Message);
             this.tabControl1.Controls.Add(this.news);
@@ -371,6 +431,7 @@
             // Home
             // 
             this.Home.BackColor = System.Drawing.Color.Black;
+            this.Home.Controls.Add(this.pictureBox7);
             this.Home.Controls.Add(this.msgurlTxt);
             this.Home.Controls.Add(this.label48);
             this.Home.Controls.Add(this.label23);
@@ -384,13 +445,23 @@
             this.Home.Text = "Home";
             this.Home.Click += new System.EventHandler(this.Home_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(19, 44);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
             // msgurlTxt
             // 
             this.msgurlTxt.Location = new System.Drawing.Point(269, 459);
             this.msgurlTxt.Name = "msgurlTxt";
             this.msgurlTxt.Size = new System.Drawing.Size(133, 21);
             this.msgurlTxt.TabIndex = 5;
-            this.msgurlTxt.Text = "http://simp.ly/publish/nJZFxY";
+            this.msgurlTxt.Text = "http://simp.ly/publish/3s7LrD";
             // 
             // label48
             // 
@@ -408,13 +479,13 @@
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(89, 51);
+            this.label23.Location = new System.Drawing.Point(81, 53);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(232, 38);
+            this.label23.Size = new System.Drawing.Size(295, 44);
             this.label23.TabIndex = 3;
-            this.label23.Text = "Blind Eye App";
+            this.label23.Text = "Virtual Assistant";
             // 
             // label19
             // 
@@ -1078,6 +1149,519 @@
             this.label7.Size = new System.Drawing.Size(133, 58);
             this.label7.TabIndex = 83;
             this.label7.Text = "8900";
+            // 
+            // NasaDataPage
+            // 
+            this.NasaDataPage.BackColor = System.Drawing.Color.Black;
+            this.NasaDataPage.Controls.Add(this.pictureBox16);
+            this.NasaDataPage.Controls.Add(this.tabControl2);
+            this.NasaDataPage.Location = new System.Drawing.Point(4, 25);
+            this.NasaDataPage.Name = "NasaDataPage";
+            this.NasaDataPage.Padding = new System.Windows.Forms.Padding(3);
+            this.NasaDataPage.Size = new System.Drawing.Size(420, 495);
+            this.NasaDataPage.TabIndex = 17;
+            this.NasaDataPage.Text = "Nasa Data";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(0, 4);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(433, 145);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox16.TabIndex = 0;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.NasaTab);
+            this.tabControl2.Controls.Add(this.AerospaceTab);
+            this.tabControl2.Controls.Add(this.AppliedScienceTab);
+            this.tabControl2.Controls.Add(this.AppsTab);
+            this.tabControl2.Controls.Add(this.EarthScienceTab);
+            this.tabControl2.Controls.Add(this.ManagementOperationsTab);
+            this.tabControl2.Controls.Add(this.RawDataTab);
+            this.tabControl2.Controls.Add(this.SoftwareTab);
+            this.tabControl2.Controls.Add(this.SpaceScienceTab);
+            this.tabControl2.Location = new System.Drawing.Point(3, 124);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(418, 365);
+            this.tabControl2.TabIndex = 1;
+            // 
+            // NasaTab
+            // 
+            this.NasaTab.BackColor = System.Drawing.Color.Black;
+            this.NasaTab.Controls.Add(this.label12);
+            this.NasaTab.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.NasaTab.Location = new System.Drawing.Point(4, 25);
+            this.NasaTab.Name = "NasaTab";
+            this.NasaTab.Padding = new System.Windows.Forms.Padding(3);
+            this.NasaTab.Size = new System.Drawing.Size(410, 336);
+            this.NasaTab.TabIndex = 0;
+            this.NasaTab.Text = "Home";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(38, 16);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(348, 270);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "\r\n 🔬Aerospace\r\n 🔬Applied Science\r\n 🔬Apps\r\n 🔬Earth Science\r\n 🔬Management/Oper" +
+    "ations\r\n 🔬Raw Data\r\n 🔬Software\r\n 🔬Space Science";
+            // 
+            // AerospaceTab
+            // 
+            this.AerospaceTab.BackColor = System.Drawing.Color.Black;
+            this.AerospaceTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.AerospaceTab.Controls.Add(this.webBrowser3);
+            this.AerospaceTab.Controls.Add(this.button3);
+            this.AerospaceTab.Controls.Add(this.richTextBox3);
+            this.AerospaceTab.Controls.Add(this.label50);
+            this.AerospaceTab.Location = new System.Drawing.Point(4, 25);
+            this.AerospaceTab.Name = "AerospaceTab";
+            this.AerospaceTab.Padding = new System.Windows.Forms.Padding(3);
+            this.AerospaceTab.Size = new System.Drawing.Size(410, 336);
+            this.AerospaceTab.TabIndex = 1;
+            this.AerospaceTab.Text = "Aerospace";
+            // 
+            // webBrowser3
+            // 
+            this.webBrowser3.Location = new System.Drawing.Point(1, 79);
+            this.webBrowser3.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser3.Name = "webBrowser3";
+            this.webBrowser3.Size = new System.Drawing.Size(406, 254);
+            this.webBrowser3.TabIndex = 4;
+            this.webBrowser3.Url = new System.Uri("https://data.nasa.gov/browse?browseSearch=Electric+Arc+Shock+Tube&category=Aerosp" +
+        "ace", System.UriKind.Absolute);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Black;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(337, 42);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(32, 31);
+            this.button3.TabIndex = 3;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox3.Location = new System.Drawing.Point(47, 44);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(288, 24);
+            this.richTextBox3.TabIndex = 2;
+            this.richTextBox3.Text = "Electric Arc Shock Tube";
+            this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label50.Location = new System.Drawing.Point(125, -1);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(172, 36);
+            this.label50.TabIndex = 1;
+            this.label50.Text = "Aerospace";
+            // 
+            // AppliedScienceTab
+            // 
+            this.AppliedScienceTab.BackColor = System.Drawing.Color.Black;
+            this.AppliedScienceTab.Controls.Add(this.webBrowser4);
+            this.AppliedScienceTab.Controls.Add(this.button4);
+            this.AppliedScienceTab.Controls.Add(this.richTextBox4);
+            this.AppliedScienceTab.Controls.Add(this.label44);
+            this.AppliedScienceTab.Location = new System.Drawing.Point(4, 25);
+            this.AppliedScienceTab.Name = "AppliedScienceTab";
+            this.AppliedScienceTab.Padding = new System.Windows.Forms.Padding(3);
+            this.AppliedScienceTab.Size = new System.Drawing.Size(410, 336);
+            this.AppliedScienceTab.TabIndex = 2;
+            this.AppliedScienceTab.Text = "Applied Science";
+            // 
+            // webBrowser4
+            // 
+            this.webBrowser4.Location = new System.Drawing.Point(2, 82);
+            this.webBrowser4.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser4.Name = "webBrowser4";
+            this.webBrowser4.Size = new System.Drawing.Size(406, 251);
+            this.webBrowser4.TabIndex = 8;
+            this.webBrowser4.Url = new System.Uri("https://data.nasa.gov/browse?browseSearch=Electric+Arc+Shock+Tube&category=Aerosp" +
+        "ace", System.UriKind.Absolute);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Black;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(338, 45);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(32, 31);
+            this.button4.TabIndex = 7;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox4.Location = new System.Drawing.Point(48, 47);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.Size = new System.Drawing.Size(288, 24);
+            this.richTextBox4.TabIndex = 6;
+            this.richTextBox4.Text = "Electric Arc Shock Tube";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label44.Location = new System.Drawing.Point(85, 3);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(251, 36);
+            this.label44.TabIndex = 5;
+            this.label44.Text = "Applied Science";
+            // 
+            // AppsTab
+            // 
+            this.AppsTab.BackColor = System.Drawing.Color.Black;
+            this.AppsTab.Controls.Add(this.webBrowser5);
+            this.AppsTab.Controls.Add(this.button5);
+            this.AppsTab.Controls.Add(this.richTextBox5);
+            this.AppsTab.Controls.Add(this.label51);
+            this.AppsTab.Location = new System.Drawing.Point(4, 25);
+            this.AppsTab.Name = "AppsTab";
+            this.AppsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.AppsTab.Size = new System.Drawing.Size(410, 336);
+            this.AppsTab.TabIndex = 3;
+            this.AppsTab.Text = "Apps";
+            // 
+            // webBrowser5
+            // 
+            this.webBrowser5.Location = new System.Drawing.Point(2, 82);
+            this.webBrowser5.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser5.Name = "webBrowser5";
+            this.webBrowser5.Size = new System.Drawing.Size(406, 251);
+            this.webBrowser5.TabIndex = 8;
+            this.webBrowser5.Url = new System.Uri("https://data.nasa.gov/browse?browseSearch=Electric+Arc+Shock+Tube&category=Aerosp" +
+        "ace", System.UriKind.Absolute);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Black;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(338, 45);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(32, 31);
+            this.button5.TabIndex = 7;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox5
+            // 
+            this.richTextBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox5.Location = new System.Drawing.Point(48, 47);
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.Size = new System.Drawing.Size(288, 24);
+            this.richTextBox5.TabIndex = 6;
+            this.richTextBox5.Text = "Electric Arc Shock Tube";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label51.Location = new System.Drawing.Point(168, 3);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(87, 36);
+            this.label51.TabIndex = 5;
+            this.label51.Text = "Apps";
+            // 
+            // EarthScienceTab
+            // 
+            this.EarthScienceTab.BackColor = System.Drawing.Color.Black;
+            this.EarthScienceTab.Controls.Add(this.webBrowser6);
+            this.EarthScienceTab.Controls.Add(this.button6);
+            this.EarthScienceTab.Controls.Add(this.richTextBox6);
+            this.EarthScienceTab.Controls.Add(this.label52);
+            this.EarthScienceTab.Location = new System.Drawing.Point(4, 25);
+            this.EarthScienceTab.Name = "EarthScienceTab";
+            this.EarthScienceTab.Padding = new System.Windows.Forms.Padding(3);
+            this.EarthScienceTab.Size = new System.Drawing.Size(410, 336);
+            this.EarthScienceTab.TabIndex = 4;
+            this.EarthScienceTab.Text = "Earth Science";
+            // 
+            // webBrowser6
+            // 
+            this.webBrowser6.Location = new System.Drawing.Point(2, 82);
+            this.webBrowser6.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser6.Name = "webBrowser6";
+            this.webBrowser6.Size = new System.Drawing.Size(406, 251);
+            this.webBrowser6.TabIndex = 8;
+            this.webBrowser6.Url = new System.Uri("https://data.nasa.gov/browse?browseSearch=Electric+Arc+Shock+Tube&category=Aerosp" +
+        "ace", System.UriKind.Absolute);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Black;
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(338, 45);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(32, 31);
+            this.button6.TabIndex = 7;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox6
+            // 
+            this.richTextBox6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox6.Location = new System.Drawing.Point(48, 47);
+            this.richTextBox6.Name = "richTextBox6";
+            this.richTextBox6.Size = new System.Drawing.Size(288, 24);
+            this.richTextBox6.TabIndex = 6;
+            this.richTextBox6.Text = "Electric Arc Shock Tube";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label52.Location = new System.Drawing.Point(107, 3);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(211, 36);
+            this.label52.TabIndex = 5;
+            this.label52.Text = "Earth Science";
+            // 
+            // ManagementOperationsTab
+            // 
+            this.ManagementOperationsTab.BackColor = System.Drawing.Color.Black;
+            this.ManagementOperationsTab.Controls.Add(this.webBrowser7);
+            this.ManagementOperationsTab.Controls.Add(this.button7);
+            this.ManagementOperationsTab.Controls.Add(this.richTextBox7);
+            this.ManagementOperationsTab.Controls.Add(this.label53);
+            this.ManagementOperationsTab.Location = new System.Drawing.Point(4, 25);
+            this.ManagementOperationsTab.Name = "ManagementOperationsTab";
+            this.ManagementOperationsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.ManagementOperationsTab.Size = new System.Drawing.Size(410, 336);
+            this.ManagementOperationsTab.TabIndex = 5;
+            this.ManagementOperationsTab.Text = "Management/Operations";
+            // 
+            // webBrowser7
+            // 
+            this.webBrowser7.Location = new System.Drawing.Point(2, 82);
+            this.webBrowser7.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser7.Name = "webBrowser7";
+            this.webBrowser7.Size = new System.Drawing.Size(406, 251);
+            this.webBrowser7.TabIndex = 8;
+            this.webBrowser7.Url = new System.Uri("https://data.nasa.gov/browse?browseSearch=Electric+Arc+Shock+Tube&category=Aerosp" +
+        "ace", System.UriKind.Absolute);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Black;
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(338, 45);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(32, 31);
+            this.button7.TabIndex = 7;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox7
+            // 
+            this.richTextBox7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox7.Location = new System.Drawing.Point(48, 47);
+            this.richTextBox7.Name = "richTextBox7";
+            this.richTextBox7.Size = new System.Drawing.Size(288, 24);
+            this.richTextBox7.TabIndex = 6;
+            this.richTextBox7.Text = "Electric Arc Shock Tube";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label53.Location = new System.Drawing.Point(13, 6);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(387, 36);
+            this.label53.TabIndex = 5;
+            this.label53.Text = "Management/Operations";
+            // 
+            // RawDataTab
+            // 
+            this.RawDataTab.BackColor = System.Drawing.Color.Black;
+            this.RawDataTab.Controls.Add(this.webBrowser10);
+            this.RawDataTab.Controls.Add(this.button10);
+            this.RawDataTab.Controls.Add(this.richTextBox10);
+            this.RawDataTab.Controls.Add(this.label56);
+            this.RawDataTab.Location = new System.Drawing.Point(4, 25);
+            this.RawDataTab.Name = "RawDataTab";
+            this.RawDataTab.Padding = new System.Windows.Forms.Padding(3);
+            this.RawDataTab.Size = new System.Drawing.Size(410, 336);
+            this.RawDataTab.TabIndex = 6;
+            this.RawDataTab.Text = "Raw Data";
+            // 
+            // webBrowser10
+            // 
+            this.webBrowser10.Location = new System.Drawing.Point(2, 82);
+            this.webBrowser10.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser10.Name = "webBrowser10";
+            this.webBrowser10.Size = new System.Drawing.Size(406, 251);
+            this.webBrowser10.TabIndex = 8;
+            this.webBrowser10.Url = new System.Uri("https://data.nasa.gov/browse?browseSearch=Electric+Arc+Shock+Tube&category=Aerosp" +
+        "ace", System.UriKind.Absolute);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Black;
+            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.Location = new System.Drawing.Point(338, 45);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(32, 31);
+            this.button10.TabIndex = 7;
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox10
+            // 
+            this.richTextBox10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox10.Location = new System.Drawing.Point(48, 47);
+            this.richTextBox10.Name = "richTextBox10";
+            this.richTextBox10.Size = new System.Drawing.Size(288, 24);
+            this.richTextBox10.TabIndex = 6;
+            this.richTextBox10.Text = "Electric Arc Shock Tube";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label56.Location = new System.Drawing.Point(126, 2);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(157, 36);
+            this.label56.TabIndex = 5;
+            this.label56.Text = "Raw Data";
+            // 
+            // SoftwareTab
+            // 
+            this.SoftwareTab.BackColor = System.Drawing.Color.Black;
+            this.SoftwareTab.Controls.Add(this.webBrowser9);
+            this.SoftwareTab.Controls.Add(this.button9);
+            this.SoftwareTab.Controls.Add(this.richTextBox9);
+            this.SoftwareTab.Controls.Add(this.label55);
+            this.SoftwareTab.Location = new System.Drawing.Point(4, 25);
+            this.SoftwareTab.Name = "SoftwareTab";
+            this.SoftwareTab.Padding = new System.Windows.Forms.Padding(3);
+            this.SoftwareTab.Size = new System.Drawing.Size(410, 336);
+            this.SoftwareTab.TabIndex = 7;
+            this.SoftwareTab.Text = "Software";
+            // 
+            // webBrowser9
+            // 
+            this.webBrowser9.Location = new System.Drawing.Point(2, 82);
+            this.webBrowser9.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser9.Name = "webBrowser9";
+            this.webBrowser9.Size = new System.Drawing.Size(406, 248);
+            this.webBrowser9.TabIndex = 8;
+            this.webBrowser9.Url = new System.Uri("https://data.nasa.gov/browse?browseSearch=Electric+Arc+Shock+Tube&category=Aerosp" +
+        "ace", System.UriKind.Absolute);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Black;
+            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.Location = new System.Drawing.Point(338, 45);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(32, 31);
+            this.button9.TabIndex = 7;
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox9
+            // 
+            this.richTextBox9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox9.Location = new System.Drawing.Point(48, 47);
+            this.richTextBox9.Name = "richTextBox9";
+            this.richTextBox9.Size = new System.Drawing.Size(288, 24);
+            this.richTextBox9.TabIndex = 6;
+            this.richTextBox9.Text = "Electric Arc Shock Tube";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label55.Location = new System.Drawing.Point(143, 3);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(139, 36);
+            this.label55.TabIndex = 5;
+            this.label55.Text = "Software";
+            // 
+            // SpaceScienceTab
+            // 
+            this.SpaceScienceTab.BackColor = System.Drawing.Color.Black;
+            this.SpaceScienceTab.Controls.Add(this.webBrowser8);
+            this.SpaceScienceTab.Controls.Add(this.button8);
+            this.SpaceScienceTab.Controls.Add(this.richTextBox8);
+            this.SpaceScienceTab.Controls.Add(this.label54);
+            this.SpaceScienceTab.Location = new System.Drawing.Point(4, 25);
+            this.SpaceScienceTab.Name = "SpaceScienceTab";
+            this.SpaceScienceTab.Padding = new System.Windows.Forms.Padding(3);
+            this.SpaceScienceTab.Size = new System.Drawing.Size(410, 336);
+            this.SpaceScienceTab.TabIndex = 8;
+            this.SpaceScienceTab.Text = "Space Science";
+            // 
+            // webBrowser8
+            // 
+            this.webBrowser8.Location = new System.Drawing.Point(2, 82);
+            this.webBrowser8.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser8.Name = "webBrowser8";
+            this.webBrowser8.Size = new System.Drawing.Size(406, 251);
+            this.webBrowser8.TabIndex = 8;
+            this.webBrowser8.Url = new System.Uri("https://data.nasa.gov/browse?category=Space+Science&q=Meteorite%20Landings%20&sor" +
+        "tBy=relevance&utf8=%E2%9C%93", System.UriKind.Absolute);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Black;
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(338, 45);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(32, 31);
+            this.button8.TabIndex = 7;
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox8
+            // 
+            this.richTextBox8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox8.Location = new System.Drawing.Point(48, 47);
+            this.richTextBox8.Name = "richTextBox8";
+            this.richTextBox8.Size = new System.Drawing.Size(288, 24);
+            this.richTextBox8.TabIndex = 6;
+            this.richTextBox8.Text = "Meteorite Landings ";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label54.Location = new System.Drawing.Point(97, 3);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(230, 36);
+            this.label54.TabIndex = 5;
+            this.label54.Text = "Space Science";
             // 
             // Dictionary
             // 
@@ -2395,6 +2979,7 @@
             this.label27.Size = new System.Drawing.Size(113, 16);
             this.label27.TabIndex = 130;
             this.label27.Text = "For Current location";
+            this.label27.Visible = false;
             // 
             // ipTxt
             // 
@@ -2404,6 +2989,7 @@
             this.ipTxt.Name = "ipTxt";
             this.ipTxt.Size = new System.Drawing.Size(170, 47);
             this.ipTxt.TabIndex = 127;
+            this.ipTxt.Visible = false;
             this.ipTxt.TextChanged += new System.EventHandler(this.ipTxt_TextChanged);
             // 
             // orgTxt
@@ -2414,6 +3000,7 @@
             this.orgTxt.Name = "orgTxt";
             this.orgTxt.Size = new System.Drawing.Size(170, 47);
             this.orgTxt.TabIndex = 126;
+            this.orgTxt.Visible = false;
             this.orgTxt.TextChanged += new System.EventHandler(this.orgTxt_TextChanged);
             // 
             // rgnTxt
@@ -2424,6 +3011,7 @@
             this.rgnTxt.Name = "rgnTxt";
             this.rgnTxt.Size = new System.Drawing.Size(170, 47);
             this.rgnTxt.TabIndex = 125;
+            this.rgnTxt.Visible = false;
             // 
             // ctyTxt
             // 
@@ -2433,6 +3021,7 @@
             this.ctyTxt.Name = "ctyTxt";
             this.ctyTxt.Size = new System.Drawing.Size(170, 47);
             this.ctyTxt.TabIndex = 124;
+            this.ctyTxt.Visible = false;
             // 
             // cntryTxt
             // 
@@ -2442,6 +3031,7 @@
             this.cntryTxt.Name = "cntryTxt";
             this.cntryTxt.Size = new System.Drawing.Size(170, 47);
             this.cntryTxt.TabIndex = 123;
+            this.cntryTxt.Visible = false;
             // 
             // lonTxt
             // 
@@ -2451,6 +3041,7 @@
             this.lonTxt.Name = "lonTxt";
             this.lonTxt.Size = new System.Drawing.Size(170, 47);
             this.lonTxt.TabIndex = 122;
+            this.lonTxt.Visible = false;
             // 
             // latTxt
             // 
@@ -2460,6 +3051,7 @@
             this.latTxt.Name = "latTxt";
             this.latTxt.Size = new System.Drawing.Size(170, 47);
             this.latTxt.TabIndex = 121;
+            this.latTxt.Visible = false;
             // 
             // weatherCopy
             // 
@@ -2469,6 +3061,7 @@
             this.weatherCopy.Name = "weatherCopy";
             this.weatherCopy.Size = new System.Drawing.Size(170, 50);
             this.weatherCopy.TabIndex = 120;
+            this.weatherCopy.Visible = false;
             // 
             // textBox12
             // 
@@ -2477,6 +3070,7 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(187, 203);
             this.textBox12.TabIndex = 128;
+            this.textBox12.Visible = false;
             // 
             // locationWeb
             // 
@@ -2487,6 +3081,7 @@
             this.locationWeb.Size = new System.Drawing.Size(209, 237);
             this.locationWeb.TabIndex = 129;
             this.locationWeb.Url = new System.Uri("http://mylocation.org/", System.UriKind.Absolute);
+            this.locationWeb.Visible = false;
             // 
             // WeatherCntrl
             // 
@@ -2513,6 +3108,7 @@
             this.label39.Size = new System.Drawing.Size(99, 16);
             this.label39.TabIndex = 125;
             this.label39.Text = "Dictionary helper";
+            this.label39.Visible = false;
             // 
             // label40
             // 
@@ -2524,6 +3120,7 @@
             this.label40.Size = new System.Drawing.Size(154, 16);
             this.label40.TabIndex = 124;
             this.label40.Text = "Copy from current weather";
+            this.label40.Visible = false;
             // 
             // textBox5
             // 
@@ -2534,6 +3131,7 @@
             this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox5.Size = new System.Drawing.Size(213, 203);
             this.textBox5.TabIndex = 123;
+            this.textBox5.Visible = false;
             // 
             // label28
             // 
@@ -2545,6 +3143,7 @@
             this.label28.Size = new System.Drawing.Size(113, 16);
             this.label28.TabIndex = 95;
             this.label28.Text = "For current weather";
+            this.label28.Visible = false;
             // 
             // webBrowser1
             // 
@@ -2555,6 +3154,7 @@
             this.webBrowser1.Size = new System.Drawing.Size(202, 222);
             this.webBrowser1.TabIndex = 91;
             this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
+            this.webBrowser1.Visible = false;
             // 
             // weatherWeb
             // 
@@ -2565,6 +3165,7 @@
             this.weatherWeb.Size = new System.Drawing.Size(247, 232);
             this.weatherWeb.TabIndex = 93;
             this.weatherWeb.Url = new System.Uri("http://www.timeanddate.com/weather/bangladesh/dhaka", System.UriKind.Absolute);
+            this.weatherWeb.Visible = false;
             // 
             // Draft
             // 
@@ -2592,6 +3193,7 @@
             this.engineNMlbl.Size = new System.Drawing.Size(14, 16);
             this.engineNMlbl.TabIndex = 103;
             this.engineNMlbl.Text = "0";
+            this.engineNMlbl.Visible = false;
             // 
             // enginelbl
             // 
@@ -2601,6 +3203,7 @@
             this.enginelbl.Size = new System.Drawing.Size(75, 16);
             this.enginelbl.TabIndex = 102;
             this.enginelbl.Text = "statusEngine";
+            this.enginelbl.Visible = false;
             // 
             // textBox20
             // 
@@ -2608,6 +3211,7 @@
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(100, 21);
             this.textBox20.TabIndex = 101;
+            this.textBox20.Visible = false;
             // 
             // textBox21
             // 
@@ -2615,6 +3219,7 @@
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(100, 21);
             this.textBox21.TabIndex = 100;
+            this.textBox21.Visible = false;
             // 
             // textBox19
             // 
@@ -2622,6 +3227,7 @@
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(100, 21);
             this.textBox19.TabIndex = 99;
+            this.textBox19.Visible = false;
             // 
             // textBox4
             // 
@@ -2629,6 +3235,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 21);
             this.textBox4.TabIndex = 98;
+            this.textBox4.Visible = false;
             // 
             // picLocation
             // 
@@ -2638,6 +3245,7 @@
             this.picLocation.Size = new System.Drawing.Size(26, 16);
             this.picLocation.TabIndex = 15;
             this.picLocation.Text = "___";
+            this.picLocation.Visible = false;
             // 
             // comboBox1
             // 
@@ -2646,6 +3254,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.Visible = false;
             // 
             // newsControl
             // 
@@ -2665,6 +3274,7 @@
             this.newsBox.Size = new System.Drawing.Size(250, 218);
             this.newsBox.TabIndex = 1;
             this.newsBox.Text = "";
+            this.newsBox.Visible = false;
             // 
             // newsWeb
             // 
@@ -2675,6 +3285,7 @@
             this.newsWeb.Size = new System.Drawing.Size(250, 250);
             this.newsWeb.TabIndex = 0;
             this.newsWeb.Url = new System.Uri("http://simp.ly/publish/4btbG1", System.UriKind.Absolute);
+            this.newsWeb.Visible = false;
             // 
             // tabPage21
             // 
@@ -2698,6 +3309,7 @@
             this.msgTxt.Name = "msgTxt";
             this.msgTxt.Size = new System.Drawing.Size(154, 167);
             this.msgTxt.TabIndex = 3;
+            this.msgTxt.Visible = false;
             // 
             // msgWeb
             // 
@@ -2707,6 +3319,7 @@
             this.msgWeb.Size = new System.Drawing.Size(200, 188);
             this.msgWeb.TabIndex = 2;
             this.msgWeb.Url = new System.Uri("", System.UriKind.Relative);
+            this.msgWeb.Visible = false;
             // 
             // textBox22
             // 
@@ -2715,6 +3328,7 @@
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(154, 167);
             this.textBox22.TabIndex = 1;
+            this.textBox22.Visible = false;
             // 
             // webBrowser2
             // 
@@ -2725,6 +3339,7 @@
             this.webBrowser2.Size = new System.Drawing.Size(200, 216);
             this.webBrowser2.TabIndex = 0;
             this.webBrowser2.Url = new System.Uri("https://weather.com/en", System.UriKind.Absolute);
+            this.webBrowser2.Visible = false;
             this.webBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser2_DocumentCompleted);
             // 
             // msgtxtRead
@@ -2734,6 +3349,7 @@
             this.msgtxtRead.Name = "msgtxtRead";
             this.msgtxtRead.Size = new System.Drawing.Size(154, 41);
             this.msgtxtRead.TabIndex = 4;
+            this.msgtxtRead.Visible = false;
             // 
             // tmr1hr
             // 
@@ -2822,11 +3438,11 @@
             this.label43.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.label43.ForeColor = System.Drawing.Color.White;
             this.label43.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label43.Location = new System.Drawing.Point(484, 441);
+            this.label43.Location = new System.Drawing.Point(560, 445);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(293, 25);
+            this.label43.Size = new System.Drawing.Size(196, 25);
             this.label43.TabIndex = 124;
-            this.label43.Text = "♛  Book Reader for Blind ♛";
+            this.label43.Text = "♛ Book Reader ♛";
             this.label43.Click += new System.EventHandler(this.label43_Click);
             // 
             // richTextBox2
@@ -2839,7 +3455,7 @@
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(433, 96);
             this.richTextBox2.TabIndex = 125;
-            this.richTextBox2.Text = "Reader....";
+            this.richTextBox2.Text = "tracking image.....";
             // 
             // richTextBox1
             // 
@@ -2953,6 +3569,7 @@
             this.tabControl1.ResumeLayout(false);
             this.Home.ResumeLayout(false);
             this.Home.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Clock.ResumeLayout(false);
             this.Clock.PerformLayout();
@@ -2966,6 +3583,27 @@
             this.Calculator.ResumeLayout(false);
             this.Calculator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.NasaDataPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            this.tabControl2.ResumeLayout(false);
+            this.NasaTab.ResumeLayout(false);
+            this.NasaTab.PerformLayout();
+            this.AerospaceTab.ResumeLayout(false);
+            this.AerospaceTab.PerformLayout();
+            this.AppliedScienceTab.ResumeLayout(false);
+            this.AppliedScienceTab.PerformLayout();
+            this.AppsTab.ResumeLayout(false);
+            this.AppsTab.PerformLayout();
+            this.EarthScienceTab.ResumeLayout(false);
+            this.EarthScienceTab.PerformLayout();
+            this.ManagementOperationsTab.ResumeLayout(false);
+            this.ManagementOperationsTab.PerformLayout();
+            this.RawDataTab.ResumeLayout(false);
+            this.RawDataTab.PerformLayout();
+            this.SoftwareTab.ResumeLayout(false);
+            this.SoftwareTab.PerformLayout();
+            this.SpaceScienceTab.ResumeLayout(false);
+            this.SpaceScienceTab.PerformLayout();
             this.Dictionary.ResumeLayout(false);
             this.Dictionary.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -3253,6 +3891,52 @@
         private System.Windows.Forms.Label engineNMlbl;
         private System.Windows.Forms.Button EngineEnable;
         private System.Windows.Forms.Button testingEnable;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.TabPage NasaDataPage;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage NasaTab;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TabPage AerospaceTab;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.TabPage AppliedScienceTab;
+        private System.Windows.Forms.TabPage AppsTab;
+        private System.Windows.Forms.TabPage EarthScienceTab;
+        private System.Windows.Forms.TabPage ManagementOperationsTab;
+        private System.Windows.Forms.TabPage RawDataTab;
+        private System.Windows.Forms.TabPage SoftwareTab;
+        private System.Windows.Forms.TabPage SpaceScienceTab;
+        private System.Windows.Forms.WebBrowser webBrowser3;
+        private System.Windows.Forms.WebBrowser webBrowser4;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.WebBrowser webBrowser5;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.WebBrowser webBrowser6;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.RichTextBox richTextBox6;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.WebBrowser webBrowser7;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.RichTextBox richTextBox7;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.WebBrowser webBrowser10;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.RichTextBox richTextBox10;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.WebBrowser webBrowser9;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.RichTextBox richTextBox9;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.WebBrowser webBrowser8;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.RichTextBox richTextBox8;
+        private System.Windows.Forms.Label label54;
     }
 }
 

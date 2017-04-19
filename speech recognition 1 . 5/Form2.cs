@@ -41,7 +41,7 @@ namespace speech_recognition_1._5
 
 
             Choices commands = new Choices();
-            commands.Add(new string[] { "Open Blind Eye App" });
+            commands.Add(new string[] { "Open Virtual Assistant" });
             GrammarBuilder gBuilder = new GrammarBuilder();
             gBuilder.Append(commands);
             Grammar grammer = new Grammar(gBuilder);
@@ -60,7 +60,7 @@ namespace speech_recognition_1._5
         {
             switch (e.Result.Text)
             {
-                case "Open Blind Eye App":
+                case "Open Virtual Assistant":
 
                     
                     if(status.Text=="status")
@@ -120,6 +120,11 @@ namespace speech_recognition_1._5
             status.Text = "aaa";
 
             this.Visible = false;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

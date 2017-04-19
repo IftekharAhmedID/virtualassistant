@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("speech recognition 1 . 5")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Virtual Assistant")]
+[assembly: AssemblyDescription("Your pc turns into an assistant without any cost by which you can do everything by just talking with your pc and no need to look for a while in the screen and get all the information which you want to know")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mears Corporation")]
-[assembly: AssemblyProduct("Blind Eye App")]
+[assembly: AssemblyProduct("Virtual Assistant")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
